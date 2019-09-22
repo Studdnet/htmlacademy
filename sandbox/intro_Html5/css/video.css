@@ -87,87 +87,45 @@
     clear: both;
   }
   
-  .about-me {
-    min-height: 100px;
+  .post {
     margin: 0 20px;
+  }
+  
+  .post header {
+    min-height: 50px;
+    margin-bottom: 1em;
+  }
+  
+  .post header h1 {
+    margin: 0;
+  }
+  
+  .post header time {
+    font-size: 11px;
+    color: #999999;
+  }
+  
+  .post .intro {
+    margin: 1em 0;
     padding: 10px;
     background-color: rgba(241, 196, 15, 0.1);
     border-radius: 5px;
-    box-shadow: 0 0 3px #cccccc;
   }
   
-  .about-me::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .profile {
-    float: left;
-    width: 51%;
-    min-height: 100px;
-    padding: 2%;
-    background-color: rgba(243, 156, 18, 0.1);
-    border-radius: 5px;
-  }
-  
-  .profile h1 {
+  .post .intro p {
     margin: 0;
-    font-size: 1.7em;
   }
   
-li .ref_img{
-    text-decoration: none;
-    color: green; 
-}
-
-.ref_img:hover{
-    color: blue;
-}
-
-  .profile p {
-    margin: 0.5em 0;
-  }
-  
-  .last-actions {
-    float: right;
-    width: 40%;
-    min-height: 100px;
-    background-color: #f1c40f;
-    border: 5px solid white;
-    border-bottom-width: 15px;
-    box-shadow: 0 0 8px -1px #f39c12;
-  }
-  
-  .last-actions ul {
-    margin: 0;
-    padding: 10px;
-    list-style: none;
-  }
-  
-  .last-actions li {
-    margin-bottom: 0.5em;
+  .post .content {
+    min-height: 200px;
+    margin-bottom: 20px;
     font-size: 14px;
-    font-family: "Courier New";
   }
   
-  .last-actions time {
-    display: block;
-    font-size: 11px;
-    color: #666666;
-  }
-  
-  .posts {
-    min-height: 50px;
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #f5f5f5;
-    box-shadow: 0 0 5px #cccccc;
-  }
-  
-  .featured-post header h1 {
-    margin: 0;
-    margin-bottom: 0.8em;
+  .post .content h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 18px;
   }
   
   /* Footer */
@@ -177,10 +135,11 @@ li .ref_img{
     font-size: 14px;
     color: black;
     background-color: #f1c40f;
-    background-image: linear-gradient(45deg, transparent 50%, white 50%),
-    linear-gradient(-45deg, transparent 50%, white 50%),
-    linear-gradient(135deg, transparent 50%, #2c3e50 50%),
-    linear-gradient(-135deg, transparent 50%, #2c3e50 50%);
+    background-image:
+      linear-gradient(45deg, transparent 50%, white 50%),
+      linear-gradient(-45deg, transparent 50%, white 50%),
+      linear-gradient(135deg, transparent 50%, #2c3e50 50%),
+      linear-gradient(-135deg, transparent 50%, #2c3e50 50%);
     background-repeat: repeat-x;
     background-position: 0 0, 0 0, 0 100%, 0 100%;
     background-size: 12px 12px;
